@@ -11,19 +11,26 @@ public class ReverseOfStringTest {
     @Before
     public void setUp(){
         rev=new ReverseOfString();
-    }
+    }//creating an object
     @Test
     public void checkReverseOfAString()
     {
-        String result=rev.RevString("Spoorthi");
+        String result=rev.revString("Spoorthi");
         assertEquals("ihtroopS",result);
     }
     @Test
     public void checkReverseOfAStringReturnsString()
     {
-        String result=rev.RevString("Ball");
+        String result=rev.revString("Ball");
         assertEquals("llaB",result);
     }
+    @Test
+    public void checkReverseOfAIntegerReturnsString()
+    {
+        String result=rev.revString("1234");
+        assertEquals("4321",result);
+    }
+
     @After
     public void tearDown(){
         rev=null;

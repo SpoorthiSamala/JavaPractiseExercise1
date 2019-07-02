@@ -3,7 +3,7 @@ package com.stackroute.junit;
 import java.util.Scanner;
 
 public class PalindromeCheck {
-    public static String Palin(int n) //checking whether a number is palindrome
+    public static String palindromeCheck(int n) //checking whether a number is palindrome
     {
         int temp, r, sum, add;
         String string="";

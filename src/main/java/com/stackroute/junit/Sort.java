@@ -3,10 +3,10 @@ package com.stackroute.junit;
 import java.util.Scanner;
 
 public class Sort {
-    public static String Sorting(int array[]) //sorting the given array in descending order
+    public static String sortingList(int array[]) //sorting the given array in descending order
     {
         int n, i, j, swap;
-        String s = "";
+        String string = "";
         int sum = 0;
         n = array.length;
         for (i = 0; i < n - 1; i++) {
@@ -19,7 +19,7 @@ public class Sort {
             }
         }
 
-        s = "Sorted list of elements";
+        string = "Sorted list of elements";
         for (i = n - 1; i >= 0; i--)
             System.out.println(array[i]);
         for (i = 0; i < n; i++) {
@@ -27,13 +27,13 @@ public class Sort {
                 sum = sum + array[i];
             }
         }
-        s = "sum of the number is " + sum;
+        string = "sum of the number is " + sum;
         if (sum > 15) {
             System.out.println("True");
         } else {
             System.out.println("False");
         }
-        return s;
+        return string;
     }
 }
 

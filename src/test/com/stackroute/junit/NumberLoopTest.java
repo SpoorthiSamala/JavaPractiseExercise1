@@ -13,16 +13,22 @@ public class NumberLoopTest {
         numberLoop=new NumberLoop();
     }
     @Test
-    public void givenOneIntegerReturnsAPattern()
+    public void givenOneIntegerReturnsANumberPattern()
     {
-        String result=numberLoop.Repeatative(3);
+        String result=numberLoop.repeatativeNumber(3);
         assertEquals("122333",result);
     }
     @Test
-    public void givenOneIntegerReturnsAPatterns()
+    public void givenOneIntegerReturnsAPattern()
     {
-        String result=numberLoop.Repeatative(5);
+        String result=numberLoop.repeatativeNumber(5);
         assertEquals("122333444455555",result);
+    }
+    @Test
+    public void givenOneIntegerReturnAPattern()
+    {
+        String result=numberLoop.repeatativeNumber(0);
+        assertNotEquals("0",result);
     }
     @After
     public void tearDown(){

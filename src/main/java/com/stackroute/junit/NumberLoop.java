@@ -3,18 +3,18 @@ package com.stackroute.junit;
 import java.util.Scanner;
 
 public class NumberLoop {
-    public static String Repeatative(int n) //repeating a given number for a number of times
+    public static String repeatativeNumber(int n) //repeating a given number for a number of times
     {
-        String str="";
+        String string="";
         for(int i=1;i<=n;i++)
         {
             for(int j=0;j<i;j++)
             {
-                str=str+i;
+                string=string+i;
             }
 
         }
-        return str;
+        return string;
     }
 
 }

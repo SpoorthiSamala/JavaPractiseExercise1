@@ -13,13 +13,13 @@ public class StringPatternTest {
         stringPattern=new StringPattern();
     }
     @Test
-    public void givenOneStringAndOneIntegerReturnsString(){
-        String result=stringPattern.Repeat("Stack",3);
+    public void givenOneStringAndOneIntegerReturnsStringPattern(){
+        String result=stringPattern.repeatPattern("Stack",3);
         assertEquals("Stackackackack",result);
     }
     @Test
     public void givenOneStringAndOneIntegerReturnString(){
-        String result=stringPattern.Repeat("Route",2);
+        String result=stringPattern.repeatPattern("Route",2);
         assertEquals("Routetete",result);
     }
     @After

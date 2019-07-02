@@ -12,24 +12,24 @@ public class VowelsConsonantsCheckerTest {
     public void setUp()
     {
         vowelsConsonantsChecker=new VowelsConsonantsChecker();
-    }
+    } //creating an object
     @Test
-    public void checkWhetherItIsAVowel()
+    public void checkWhetherTheInputIsAVowel()
     {
-        String result=vowelsConsonantsChecker.Check("a");
+        String result=vowelsConsonantsChecker.checkTheString("a");
         assertEquals("Vowel ",result);
     }
 
     @Test
-    public void checkWhetherItIsAConsonant()
+    public void checkWhetherInputIsAConsonant()
     {
-        String result=vowelsConsonantsChecker.Check("b");
+        String result=vowelsConsonantsChecker.checkTheString("b");
         assertEquals("Consonant ",result);
     }
     @Test
-    public void checkWhetherItIsAConsonantAndVowel()
+    public void checkWhetherInputIsAConsonantAndVowel()
     {
-        String result=vowelsConsonantsChecker.Check("ap");
+        String result=vowelsConsonantsChecker.checkTheString("ap");
         assertEquals("Vowel Consonant ",result);
     }
     @After

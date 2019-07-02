@@ -14,17 +14,17 @@ public class OddEvenCheckerTest {
     }
     @Test
     public void checkWhetherItIsOdd(){
-        String result=oddEvenChecker.oddeven(23);
+        String result=oddEvenChecker.oddEven(23);
         assertEquals("Tom",result);
     }
     @Test
     public void checkWhetherItIsEven(){
-        String result=oddEvenChecker.oddeven(26);
+        String result=oddEvenChecker.oddEven(26);
         assertEquals("Jerry",result);
     }
     @Test
     public void checkWhetherInputIsCorrect(){
-        String result=oddEvenChecker.oddeven(36);
+        String result=oddEvenChecker.oddEven(36);
         assertEquals("Incorrect Input",result);
     }
     @After

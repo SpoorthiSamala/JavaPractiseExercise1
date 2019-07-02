@@ -11,18 +11,24 @@ public class AddingNumbersTest {
     @Before
     public void setUp(){
         addingNumbers=new AddingNumbers();
-    }
+    } //creating an object
     @Test
-    public void addingOfNumbers()
+    public void givenInputArrayOfIntegersReturnsSum()
     {
-        int sum=addingNumbers.Adding(new int[]{10,20,30,40});
+        int sum=addingNumbers.addingNumbers(new int[]{10,20,30,40}); //giving input in an array
         assertEquals(100,sum);
     }
     @Test
-    public void addingOfNumbersgivesInteger()
+    public void givenInputArrayOfIntegersReturnSum()
     {
-        int sum=addingNumbers.Adding(new int[]{11,20,30,40});
+        int sum=addingNumbers.addingNumbers(new int[]{11,20,30,40});
         assertEquals(101,sum);
+    }
+    @Test
+    public void givenInputArrayOfIntegersWhichContainsNegativeIntegersReturnSum()
+    {
+        int sum=addingNumbers.addingNumbers(new int[]{1,2,4,-4});
+        assertEquals(3,sum);
     }
     @After
     public void tearDown(){

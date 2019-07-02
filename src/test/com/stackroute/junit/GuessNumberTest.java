@@ -10,31 +10,31 @@ public class GuessNumberTest {
     GuessNumber guessNumber;
     @Before
     public void setUp(){
-        guessNumber=new GuessNumber();
+        guessNumber=new GuessNumber(); //creating object for the GuessNumber class
 
     }
     @Test
-    public void checkingGuessMatchesTheOriginalNumber()
+    public void checkWhetherGuessNumberMatchesTheOriginalNumber()
     {
-        String result=guessNumber.Checking(45);
+        String result=guessNumber.checkingTarget(45);
         assertEquals("Number guessed matches the original number",result);
     }
     @Test
-    public void checkingGreaterThanTheOriginalNumber()
+    public void checkWhetherGuessNumberIsGreaterThanTheOriginalNumber()
     {
-        String result=guessNumber.Checking(47);
+        String result=guessNumber.checkingTarget(47);
         assertEquals("Number guessed is more than the original number",result);
     }
     @Test
-    public void checkingSmallerThanTheOriginalNumber()
+    public void checkWhetherGuessNumberIsSmallerThanTheOriginalNumber()
     {
-        String result=guessNumber.Checking(40);
+        String result=guessNumber.checkingTarget(40);
         assertEquals("Number guessed is less than the original number",result);
     }
     @Test
-    public void checkingNumberErrorMessage()
+    public void checkWhetherInputNumberIsInRange()
     {
-        String result=guessNumber.Checking(52);
+        String result=guessNumber.checkingTarget(52);
         assertEquals("Number not in range",result);
     }
     @After
